@@ -105,7 +105,7 @@ class Anime:
         print(f"Total {len(self.animeList)} Animes Found")
 
     def save_as_json(self):
-        with open(f"animes.json", 'w', encoding="utf-8") as outFile:
+        with open(f"static.json", 'w', encoding="utf-8") as outFile:
             json.dump(self.animeList, outFile, ensure_ascii=False, indent=2)
             print(f"Saved {len(self.animeList)} Animes to Animes.json")
 

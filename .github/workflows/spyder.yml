@@ -26,6 +26,6 @@ jobs:
       - name: Commit Data To GitHub Repo  
         run: |
           git config --global user.name "bot"
-          git config --global user.email "bot@gmail.com"
+          git config --global user.email "xiangwei0131@gmail.com"
           git add static.json && git commit -m "Update static.json by bot"
           git push origin main

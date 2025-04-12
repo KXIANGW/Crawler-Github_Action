@@ -29,6 +29,6 @@ jobs:
         run: |
           git config --global user.name "bot"
           git config --global user.email "xiangwei0131@gmail.com"
-          git add static.json && git commit -m "Update static.json by bot"
-          git add api.csv && git commit -m "Update api.csv by bot"
+          git add static.json && git commit -m "Update static.json by bot" || echo "No changes to commit"
+          git add api.csv && git commit -m "Update api.csv by bot" || echo "No changes to commit"
           git push origin main
